@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(239, 236, 255);
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  font-size: 20px;
+  font-weight: 100;
+  word-spacing: 1px;
+  line-height: 1.45em;
+  font-family: "Ubuntu", "Sharp Sans No1", Sans-serif;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(1, 1, 32, 0.98),
+      rgba(0, 26, 39, 0.98)
+    ),
+    url(./img/background6.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #7aa7ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(13, 10, 10);
+}
+
+.App-link {
+  background-color: #7aa7ff;
+  color: rgb(13, 10, 10);
+}
+
+.main-page {
+  padding-top: 20px;
+}
+
+.home-nav {
+  background-color: #7aa7ff;
+  color: rgb(13, 10, 10);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.sign-up {
+  background-color: #7aa7ff;
+  color: rgb(13, 10, 10);
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.signup-form {
+  background-color: #7aa7ff;
+  color: rgb(13, 10, 10);
+  padding-top: 60px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+}
+
+.signin-onUp {
+  background-color: #7aa7ff;
+  color: black;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.home-page {
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 30px;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.user-account {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
+}
+
+.user-card {
+  margin-top: 30px;
+}
