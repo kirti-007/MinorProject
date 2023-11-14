@@ -2,7 +2,7 @@ const path = require("path");
 const HDWalletProvider = require('./client/node_modules/@truffle/hdwallet-provider');
 require('./client/node_modules/dotenv').config();
 
-const MNEMONIC = "thoughtloungeaffordhungrygingeremploygrabawkwardstuffbenefitfatherevidence";
+const MNEMONIC = "weapon bacon unknown eight oven fame true nation orphan sister actual bring";
 const ALCHEMY_KEY = "fJLAScRMIXRUhbE2qO5IDRLxEGwkNvem"; // Change this variable name
 
 module.exports = {

@@ -16,7 +16,7 @@ class SignUp extends Component {
 
     onSignUp = async () => {
         //this.setState({ signedUp: false });
-
+        console.log('onSignUp');
         if (this.state.username !== '' && this.state.password !== '' && this.state.digicode !== '') {
             let username = this.state.username.trim();
             let password = this.state.password.trim();
@@ -41,8 +41,11 @@ class SignUp extends Component {
                 });
                 return
             } else {
+                console.log("Checking Account Existance...")
+                console.log(this.props.account)
                 let userAddress = await this.props.contract.methods.getUserAddress()
                     .call({ from: this.props.account });
+                console.log(userAddress);
 
                 if (userAddress !== '0x0000000000000000000000000000000000000000') {
                     this.setState({
@@ -55,8 +58,9 @@ class SignUp extends Component {
 
                     return;
                 } else {
+                
                     let hash = await AuthenticationHash(username, this.props.account, password, digicode, this.props.web3);
-
+                    
                     await this.props.contract.methods.register(hash).send({ from: this.props.account });
 
                     this.setState({

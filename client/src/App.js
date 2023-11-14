@@ -32,6 +32,7 @@ class App extends Component {
       const web3 = await web3Connection();
       const contract = await Contract(web3);
       const accounts = await web3.eth.getAccounts();
+      console.log("Getting Accounts");
 
       this.setState({ web3, contract, account: accounts[0] }, this.start);
     } catch (error) {
