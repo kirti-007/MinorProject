@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Grid, Message, Image } from 'semantic-ui-react';
 import '../App.css';
+import img from '../img/user.webp';
 
 class UserAccount extends Component {
 
@@ -12,13 +13,13 @@ class UserAccount extends Component {
                         <Grid.Column>
                             <Card fluid>
                                 <Image
-                                    src='https://react.semantic-ui.com/images/avatar/large/steve.jpg'
+                                    src = {img} alt='image'
                                     wrapped ui={false}
                                 />
                                 <Card.Content>
                                     <Card.Header>{this.props.username}</Card.Header>
                                     <Card.Meta>
-                                        <span>user</span>
+                                        <span>USER</span>
                                     </Card.Meta>
                                     <Card.Description>
                                         <strong>
@@ -26,9 +27,9 @@ class UserAccount extends Component {
                                                 this.props.username.charAt(0).toUpperCase() +
                                                 this.props.username.toLowerCase().slice(1)
                                             }
-                                        </strong> is a scientist and Blockchain developer living in Paris, France.
+                                        </strong> is a Web Developer and Blockchain Developer living in Odisha, India.
                                         <br></br>
-                                        <a href='https://www.linkedin.com/in/samuel-ongala-edoumou/' target='blank'>
+                                        <a href='https://www.linkedin.com/in/kirti-mahapatra-1020a520b/' target='blank'>
                                             LinkedIn Profile
                                         </a>
                                     </Card.Description>
