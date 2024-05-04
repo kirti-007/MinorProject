@@ -2,8 +2,8 @@ const path = require("path");
 const HDWalletProvider = require('./client/node_modules/@truffle/hdwallet-provider');
 require('./client/node_modules/dotenv').config();
 
-const MNEMONIC = "weapon bacon unknown eight oven fame true nation orphan sister actual bring";
-const ALCHEMY_KEY = "fJLAScRMIXRUhbE2qO5IDRLxEGwkNvem"; // Change this variable name
+const MNEMONIC = "search impulse spice crumble blast skin certain female truth wisdom today deny";
+const ALCHEMY_KEY = "fJLAScRMIXRUhbE2qO5IDRLxEGwkNvem"; 
 
 module.exports = {
   contracts_build_directory: path.join(__dirname, "client/src/contracts"),

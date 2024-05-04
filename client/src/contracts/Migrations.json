@@ -1048,7 +1048,7 @@
   "sourceMap": "59:353:1:-:0;;;236:51;;;;;;;;;;269:10;261:5;;:18;;;;;;;;;;;;;;;;;;59:353;;;;;;",
   "deployedSourceMap": "59:353:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;113:39;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;86:20;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;295:114;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;113:39;;;;:::o;86:20::-;;;;;;;;;;;;:::o;295:114::-;212:5;;;;;;;;;;198:19;;:10;:19;;;194:26;;;392:9:::1;365:24;:36;;;;194:26:::0;295:114;:::o;7:139:2:-;53:5;91:6;78:20;69:29;;107:33;134:5;107:33;:::i;:::-;59:87;;;;:::o;152:329::-;211:6;260:2;248:9;239:7;235:23;231:32;228:2;;;266:79;;:::i;:::-;228:2;386:1;411:53;456:7;447:6;436:9;432:22;411:53;:::i;:::-;401:63;;357:117;218:263;;;;:::o;487:118::-;574:24;592:5;574:24;:::i;:::-;569:3;562:37;552:53;;:::o;611:118::-;698:24;716:5;698:24;:::i;:::-;693:3;686:37;676:53;;:::o;735:222::-;828:4;866:2;855:9;851:18;843:26;;879:71;947:1;936:9;932:17;923:6;879:71;:::i;:::-;833:124;;;;:::o;963:222::-;1056:4;1094:2;1083:9;1079:18;1071:26;;1107:71;1175:1;1164:9;1160:17;1151:6;1107:71;:::i;:::-;1061:124;;;;:::o;1272:96::-;1309:7;1338:24;1356:5;1338:24;:::i;:::-;1327:35;;1317:51;;;:::o;1374:126::-;1411:7;1451:42;1444:5;1440:54;1429:65;;1419:81;;;:::o;1506:77::-;1543:7;1572:5;1561:16;;1551:32;;;:::o;1712:117::-;1821:1;1818;1811:12;1835:122;1908:24;1926:5;1908:24;:::i;:::-;1901:5;1898:35;1888:2;;1947:1;1944;1937:12;1888:2;1878:79;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.6;\r\n\r\ncontract Migrations {\r\n    address public owner;\r\n    uint256 public last_completed_migration;\r\n\r\n    modifier restricted() {\r\n        if (msg.sender == owner) _;\r\n    }\r\n\r\n    constructor() {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    function setCompleted(uint256 completed) public restricted {\r\n        last_completed_migration = completed;\r\n    }\r\n}\r\n",
-  "sourcePath": "C:\\Users\\kmcut\\Desktop\\project\\BlockchainProject\\blockchain-based-authentication\\contracts\\Migrations.sol",
+  "sourcePath": "C:\\Users\\kmcut\\Desktop\\blockchain-based-authentication\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -1454,8 +1454,8 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xc203432e096faeF70E5BF1494981d3deF9832647",
-      "transactionHash": "0xbf781fb148b722172ad85af721e3adc6357c8e26868ebccdd584369899102622"
+      "address": "0xCc5eB3fC64FD0787A3bAbf794E25e3d58830496f",
+      "transactionHash": "0xd0d4f2d6b3d6ea063e109bfb46cc49d121f738e477cead7a245fee57cd158e3a"
     },
     "1688762299058": {
       "events": {},
@@ -1465,7 +1465,7 @@
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2023-11-14T11:28:21.966Z",
+  "updatedAt": "2024-05-04T07:50:31.136Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
